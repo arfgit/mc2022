@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthony Feliz Forums practice</title>
+    <style media="screen">
+        legend {
+            background-color: rgb(50, 50, 50);
+            color:white;
+            padding: 0.5em 1em;
+        }
+        fieldset{
+            width: 60%;
+        }
+        label{
+            display: block;
+            margin-top: 1em;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Forms practice</h2>
+    <form action="info.html" method="get">
+        <fieldset>
+            <legend>Fill up the form</legend>
+            <label>CLICK SUBMITE TO SEND FORM:  <input type="submit" names="" value="CLICK HERE" onclick="passvalue();"></label>
+            <label for="n">Enter your name:  <input type="text" name="fullName" value="" id="n" placeholder="Enter your full name..."></label>
+           <hr>
+           <script type="text/javascript">
+               function passvalue(){
+                let fullN = document.querySelector('#n').value;
+                localStorage.setItem('full_name', fullN);
+                return false;
+               }
+           </script>
+           <h3>Check your favorite genre (multiple selection)</h3>
+           <input type="checkbox" name="genre" value="rock">Rock
+           <input type="checkbox" name="genre" value="hiphop">Hip Hop
+           <input type="checkbox" name="genre" value="salsa">Salsa
+           <input type="checkbox" name="genre" value="reggaeton">Reggaeton
+           <hr>
+           <h3>Select your age group (one selection)</h3>
+           <input type="radio" name="age" value="18_25">18 - 25
+           <input type="radio" name="age" value="26_35">26 - 35
+           <input type="radio" name="age" value="36_50">36 - 50
+           <input type="radio" name="age" value="65_up">65 and up
+           <hr>
+           <label>Pick your vacation's date: <input type="date" name="vacaion_name"></label>
+           <hr>
+           <label>Create a password: <input type="password" name="password"></label>
+           <hr>
+           <label>Upload your assignment: <input type="file" name="upload_file" value="UPLOAD"></label>
+           <hr>
+           <label>Enter your email: <input type="email" name="email"></label>
+           <hr>
+           <label>Find in this wesbitesite: <input type="search" name="search" placeholder="Search..."></label>
+           <hr>
+           <h3>Do you play any of the following instruments? ONE SELECTION</h3>
+           <select name="instruments" size="2" multiple="multiple" class="form-control">
+                <option value="guitar">GUITAR</option>
+                <option value="piano">PIANO</option>
+                <option value="drums">DRUMS</option>
+                <option value="triangle">TRIANGLE</option>
+                <option value="keyboard">KEYBOARD</option>
+           </select>
+           <hr>
+           <h3>What to think about HTML, CSS, and JS?</h3>
+           <textarea name="comments" rows="8" cols="10" placeholder="Type your comment..."></textarea>
+
+        </fieldset>
+      
+
+    </form>
+    
+</body>
+</html>

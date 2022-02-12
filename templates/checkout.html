@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <title>Anthony Feliz - Checkout</title>
+</head>
+<body>
+    <form action="{{url_for('.thankyou')}}" method="post">
+        <fieldset class="check">
+            <legend>CHECKOUT</legend>
+            <h2>Items in your bag</h2>
+            <p id="item"></p>
+            <hr style="margin: 1em;">
+            <label for="n">Enter username:  <input type="text" name="username" value="" placeholder="Enter your username..."></label>
+            <label for="n">Enter email address:  <input type="email" name="email" value="" placeholder="Enter your email address..."></label>
+           
+            <input type="submit" value="SUBMIT ORDER" style="margin-top:2em;"><a href="thankyou.html"></a> 
+        </fieldset>
+        
+    </form>
+</body>
+</html>

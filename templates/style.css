@@ -1,0 +1,137 @@
+*{box-sizing: border-box;}
+
+.title{
+    background-color: purple;
+    color: pink;
+    text-align: center;
+}
+
+.link{
+    background-color: darkgray;
+    color: purple;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.link:hover{
+    background-color: purple;
+    color: darkgray;
+    box-shadow: 0px 0px 5px 3px purple;
+}
+
+
+
+.modalWindow{
+    background-color: rgba(150,150,150,0.6);
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modalWindow:target{
+    opacity: 1;
+    pointer-events: auto;
+    transition: ease-in 0.5s;
+}
+
+.cont{
+    width:550px;
+    height:600px;
+    background:white;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:100px;
+    position: relative;
+}
+
+.close{
+    background-color:lightgray;
+    padding: 10px;
+    position:absolute;
+    top:0px;
+    right:0px;
+    text-decoration: none;
+    color: purple;
+    font-weight: 600;
+}
+
+.close:hover{
+    background-color: darkgray;
+    color: white;
+}
+
+.info{
+    /* border:solid red; */
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top:10%;
+
+}
+
+.info img{
+    width:50%;
+    /* padding: 5%; */
+    /* border: solid yellow;   */
+    margin-top: 5%;
+}
+
+.p{
+    position: absolute;
+    padding:5px;
+    width: 50%;
+    top:10%;
+    right:0px;
+    /* border:solid green; */
+}
+
+.p i{
+    font-size:0.7em;
+}
+
+.p span{
+    text-decoration: line-through;
+}
+
+.p b{
+    color:red;
+    font-size:1.2em;
+}
+
+.p hr{
+    margin-top: 60px;
+}
+
+.add{
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color: rgb(50, 50, 50);
+    text-align: center;
+    padding: 10px 0px;
+    color: lightgray;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.add:hover{
+    background-color: lightgray;
+    color: rgb(50,50,50);
+}
+
+.check{
+    width: 50%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
